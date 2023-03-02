@@ -1,0 +1,32 @@
+<html>
+<body>
+    <form>
+<label>password :
+  <input name="password" id="password" type="password"' onkeyup="clearing();" />
+</label>
+<br>
+<label>confirm password:
+  <input type="password" name="confirm_password" id="confirm_password" onkeyup ='check();'/> 
+  <span id='message'></span>
+</label><br>
+<button type="submit" onclick="check();">submit</button>
+</form>
+<script type="text/javascript">
+    var check = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('confirm_password').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'matching';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'not matching';
+  }
+}
+function clearing()
+{
+   document.getElementById('confirm_password').value = "";
+    document.getElementById('message').innerHTML = '';
+}
+</script>
+</body>
+</html>

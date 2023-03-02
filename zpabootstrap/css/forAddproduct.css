@@ -1,0 +1,25 @@
+
+#frame {
+	
+    background: #f2f2f2; 
+     width:2050px;  
+    margin:auto;
+    height:auto;
+}
+#size{
+	width:700px;
+	height: auto;
+	margin:auto;
+
+}
+#middle{
+	padding-top:5%;
+}
+#a{
+	background-color:transparent;
+	color: red;
+	font-size:x-large;
+	font-weight: bold;
+	text-align: top;
+	border-color: transparent;
+}
